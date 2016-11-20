@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+  "name": "Google Play My Books Downloader",
+  "version": "1.0.0",
+
+  "description": "Adds a download link to the pop-up menu of user-uploaded books on Google Play Books.",
+  "icons": {
+    "24": "icon.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["https://play.google.com/books*"],
+      "js": ["main.js"]
+    }
+  ]
+}
